@@ -1,13 +1,66 @@
-/* FOOTER */
-.color-bckgrnd {
-    background: black;
-    
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=Bungee&display=swap');
+
+
+$ruda-primary: #000;
+$ruda-secondary: #fff;
+$ruda-font-primary: 'Bungee Shade';
+$ruda-font-secondary:'Bungee';
+$ruda-font-text: 'Montserrat';
+
+a {
+    text-decoration: none;
+    color: $ruda-primary;
 }
 
+a:hover {
+    color: $ruda-primary;
+}
+
+h2, h3 {
+    font-family: $ruda-font-secondary;
+}
+
+p {
+    font-family: $ruda-font-text;
+}
+
+
+// NAV
+header nav ul li a {
+    font-family: $ruda-font-secondary;
+    color: $ruda-primary;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: $ruda-primary;
+    font-size: 17px;
+}
+
+
+/* FOOTER */
+
+
 .footer-copy {
-    color: rgb(240, 240, 240);
+    color: $ruda-primary;
+    font-family: $ruda-font-text;
     text-align: center;
 }
+//  NAV FOOTER
+footer nav ul li a {
+    margin-top: 3rem;
+    font-family: $ruda-font-secondary;
+    color: $ruda-secondary;
+}
+
+footer nav ul li a:hover {
+    color: $ruda-font-primary;
+    font-size: 25px;
+}
+
+
+
+// ANIMACIONES
 .shake-slow {
     display: inherit;
     transform-origin: center center;
@@ -126,4 +179,5 @@
     animation-name: shake-slow;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite; }
+    animation-iteration-count: infinite;
+}

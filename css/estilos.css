@@ -1,11 +1,48 @@
-/* FOOTER */
-.color-bckgrnd {
-  background: black;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=Bungee&display=swap");
+a {
+  text-decoration: none;
+  color: #000;
 }
 
+a:hover {
+  color: #000;
+}
+
+h2, h3 {
+  font-family: "Bungee";
+}
+
+p {
+  font-family: "Montserrat";
+}
+
+header nav ul li a {
+  font-family: "Bungee";
+  color: #000;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #000;
+  font-size: 17px;
+}
+
+/* FOOTER */
 .footer-copy {
-  color: #f0f0f0;
+  color: #000;
+  font-family: "Montserrat";
   text-align: center;
+}
+
+footer nav ul li a {
+  margin-top: 3rem;
+  font-family: "Bungee";
+  color: #fff;
+}
+
+footer nav ul li a:hover {
+  color: "Bungee Shade";
+  font-size: 25px;
 }
 
 .shake-slow {
