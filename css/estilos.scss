@@ -24,6 +24,35 @@ p {
     font-family: $ruda-font-text;
 }
 
+// HEADER
+.parallax {
+    background: fixed no-repeat 50% 50%;
+    background-size: cover;
+}
+
+#header {
+    background-image: url(/img/header-parralax.png);
+}
+
+#header-talles {
+    background-image: url(/img/header-parallax-talles.png);
+}
+
+#header-tienda {
+    background-image: url(/img/header-parallax-tienda.png);
+}
+
+#header-galeria {
+    background-image: url(/img/header-parallax-galeria.png) ;
+}
+
+#header-faq {
+    background-image: url(/img/header-parallax-faq.png);
+}
+
+#header-contacto {
+    background-image: url(/img/header-parallax-contacto.png);
+}
 
 // NAV
 header nav ul li a {
@@ -34,12 +63,35 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: $ruda-primary;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 
 /* FOOTER */
 
+#footer {
+    background-image: url(/img/footer-parallax.png);
+}
+
+#footer-galeria {
+    background-image: url(/img/footer-parallax-galeria.png);
+}
+
+#footer-faq {
+    background-image: url(/img/footer-parallax-faq.png);
+}
+
+#footer-talles {
+    background-image: url(/img/footer-parallax-talles.png);
+}
+
+#footer-tienda {
+    background-image: url(/img/footer-parallax-tienda.png);
+}
+
+#footer-contacto {
+    background-image: url(/img/footer-parallax-contacto.png);
+}
 
 .footer-copy {
     color: $ruda-primary;
