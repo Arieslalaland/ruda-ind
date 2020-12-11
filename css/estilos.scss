@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=Bungee&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 
 $ruda-primary: #000;
 $ruda-secondary: #fff;
@@ -22,7 +25,10 @@ h2, h3 {
 
 p {
     font-family: $ruda-font-text;
+    text-align: justify ;
 }
+
+
 
 // HEADER
 .parallax {
@@ -54,6 +60,8 @@ p {
     background-image: url(/img/header-parallax-contacto.png);
 }
 
+
+
 // NAV
 header nav ul li a {
     font-family: $ruda-font-secondary;
@@ -62,7 +70,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: $ruda-primary;
+    color: rgb(248, 225, 21);
     font-size: 20px;
 }
 
@@ -70,15 +78,15 @@ header nav ul li a:hover {
 /* FOOTER */
 
 #footer {
-    background-image: url(/img/footer-parallax.png);
+    background-image: url(/img/footer-parallax-talles.png);
 }
 
 #footer-galeria {
-    background-image: url(/img/footer-parallax-galeria.png);
+    background-image: url(/img/footer-parallax-talles.png);
 }
 
 #footer-faq {
-    background-image: url(/img/footer-parallax-faq.png);
+    background-image: url(/img/footer-parallax-talles.png);
 }
 
 #footer-talles {
@@ -86,11 +94,12 @@ header nav ul li a:hover {
 }
 
 #footer-tienda {
-    background-image: url(/img/footer-parallax-tienda.png);
+    background-image: url(/img/footer-parallax-talles.png);
 }
 
 #footer-contacto {
-    background-image: url(/img/footer-parallax-contacto.png);
+    background-image: url(/img/footer-parallax-talles.png);
+    
 }
 
 .footer-copy {
@@ -98,17 +107,28 @@ header nav ul li a:hover {
     font-family: $ruda-font-text;
     text-align: center;
 }
+
 //  NAV FOOTER
+
+.nav-footer{
+    margin-left: 399px;
+    height: 20vh;
+    width: 40%;
+    text-align: center;
+
+}
+
 footer nav ul li a {
     margin-top: 3rem;
     font-family: $ruda-font-secondary;
-    color: $ruda-secondary;
+    color: $ruda-primary;
 }
 
 footer nav ul li a:hover {
-    color: $ruda-font-primary;
+    color: rgb(248, 225, 21);
     font-size: 25px;
 }
+
 
 
 
@@ -232,4 +252,65 @@ footer nav ul li a:hover {
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+}
+
+.go-to-top-btn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: $ruda-primary;
+    bottom: 45px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: $ruda-secondary;
+    font-size: 22px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 320px) {
+
+    .articule-index {
+    padding:2rem;
+    text-align: center;
+    }
+
+    header nav ul li a {
+        color: red;
+        display: grid;
+    }
+
+    .centrado-mobile {
+    text-align: center;
+    }
+
+    .caja-p {
+        padding: 10px;
+        text-align: justify;
+    }
+
+    #footer {
+        background-image: none;
+    }
+
+    #footer-contacto {
+        background-image: none;
+    }
+
+    #footer-tienda {
+        background-image: none;
+    }
+
+    #footer-talles {
+        background-image: none;
+    }
+
+    #footer-faq {
+        background-image: none;
+    }
+
+    #footer-galeria {
+        background-image: none;
+    }
 }

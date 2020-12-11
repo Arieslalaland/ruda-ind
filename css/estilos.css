@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=Bungee&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -14,6 +18,7 @@ h2, h3 {
 
 p {
   font-family: "Montserrat";
+  text-align: justify;
 }
 
 .parallax {
@@ -52,21 +57,21 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: #000;
+  color: #f8e115;
   font-size: 20px;
 }
 
 /* FOOTER */
 #footer {
-  background-image: url(/img/footer-parallax.png);
+  background-image: url(/img/footer-parallax-talles.png);
 }
 
 #footer-galeria {
-  background-image: url(/img/footer-parallax-galeria.png);
+  background-image: url(/img/footer-parallax-talles.png);
 }
 
 #footer-faq {
-  background-image: url(/img/footer-parallax-faq.png);
+  background-image: url(/img/footer-parallax-talles.png);
 }
 
 #footer-talles {
@@ -74,11 +79,11 @@ header nav ul li a:hover {
 }
 
 #footer-tienda {
-  background-image: url(/img/footer-parallax-tienda.png);
+  background-image: url(/img/footer-parallax-talles.png);
 }
 
 #footer-contacto {
-  background-image: url(/img/footer-parallax-contacto.png);
+  background-image: url(/img/footer-parallax-talles.png);
 }
 
 .footer-copy {
@@ -87,14 +92,21 @@ header nav ul li a:hover {
   text-align: center;
 }
 
+.nav-footer {
+  margin-left: 399px;
+  height: 20vh;
+  width: 40%;
+  text-align: center;
+}
+
 footer nav ul li a {
   margin-top: 3rem;
   font-family: "Bungee";
-  color: #fff;
+  color: #000;
 }
 
 footer nav ul li a:hover {
-  color: "Bungee Shade";
+  color: #f8e115;
   font-size: 25px;
 }
 
@@ -527,5 +539,57 @@ footer nav ul li a:hover {
           animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+}
+
+.go-to-top-btn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #000;
+  bottom: 45px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 22px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 320px) {
+  .articule-index {
+    padding: 2rem;
+    text-align: center;
+  }
+  header nav ul li a {
+    color: red;
+    display: -ms-grid;
+    display: grid;
+  }
+  .centrado-mobile {
+    text-align: center;
+  }
+  .caja-p {
+    padding: 10px;
+    text-align: justify;
+  }
+  #footer {
+    background-image: none;
+  }
+  #footer-contacto {
+    background-image: none;
+  }
+  #footer-tienda {
+    background-image: none;
+  }
+  #footer-talles {
+    background-image: none;
+  }
+  #footer-faq {
+    background-image: none;
+  }
+  #footer-galeria {
+    background-image: none;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
