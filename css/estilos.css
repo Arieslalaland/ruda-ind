@@ -546,7 +546,7 @@ footer nav ul li a:hover {
   width: 50px;
   height: 50px;
   background: #000;
-  bottom: 45px;
+  bottom: 50px;
   right: 50px;
   text-decoration: none;
   text-align: center;
@@ -556,40 +556,76 @@ footer nav ul li a:hover {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 320px) {
-  .articule-index {
-    padding: 2rem;
-    text-align: center;
+.icon {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #header-contacto {
+    background: #fff;
   }
-  header nav ul li a {
-    color: red;
-    display: -ms-grid;
-    display: grid;
+  #header-faq {
+    background: #fff;
   }
-  .centrado-mobile {
-    text-align: center;
+  #header-talles {
+    background: #fff;
   }
-  .caja-p {
-    padding: 10px;
-    text-align: justify;
+  #header-tienda {
+    background: #fff;
   }
-  #footer {
-    background-image: none;
-  }
-  #footer-contacto {
-    background-image: none;
-  }
-  #footer-tienda {
-    background-image: none;
-  }
-  #footer-talles {
-    background-image: none;
-  }
-  #footer-faq {
-    background-image: none;
+  #header-galeria {
+    background: #fff;
   }
   #footer-galeria {
-    background-image: none;
+    background: #fff;
+  }
+  #footer-faq {
+    background: #fff;
+  }
+  #footer-talles {
+    background: #fff;
+  }
+  #footer-contacto {
+    background: #fff;
+  }
+  .nav-footer {
+    display: none;
+  }
+  .centrar {
+    text-align: center;
+  }
+  .go-to-top-btn {
+    bottom: 40px;
+    right: 50px;
+  }
+  .nav-mobile {
+    display: none;
+  }
+  .lista {
+    background: #000;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+  }
+  .icon {
+    display: block;
+  }
+  .header nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+  }
+  .cerrar {
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-footer {
+    display: inherit;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
