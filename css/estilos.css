@@ -50,17 +50,6 @@ p {
   background-image: url(/img/header-parallax-contacto.png);
 }
 
-header nav ul li a {
-  font-family: "Bungee";
-  color: #000;
-  text-decoration: none;
-}
-
-header nav ul li a:hover {
-  color: #f8e115;
-  font-size: 20px;
-}
-
 /* FOOTER */
 #footer {
   background-image: url(/img/footer-parallax-talles.png);
@@ -86,19 +75,6 @@ header nav ul li a:hover {
   background-image: url(/img/footer-parallax-talles.png);
 }
 
-.footer-copy {
-  color: #000;
-  font-family: "Montserrat";
-  text-align: center;
-}
-
-.nav-footer {
-  margin-left: 399px;
-  height: 20vh;
-  width: 40%;
-  text-align: center;
-}
-
 footer nav ul li a {
   margin-top: 3rem;
   font-family: "Bungee";
@@ -106,7 +82,7 @@ footer nav ul li a {
 }
 
 footer nav ul li a:hover {
-  color: #f8e115;
+  color: #FFDF27;
   font-size: 25px;
 }
 
@@ -556,8 +532,22 @@ footer nav ul li a:hover {
   border-radius: 50%;
 }
 
-.icon {
-  display: none;
+.nav-color {
+  background: #000;
+}
+
+.rrss {
+  text-align: center;
+}
+
+.firma-copy {
+  text-align: center;
+  color: #000;
+  font-family: "Montserrat";
+}
+
+a {
+  font-family: "Bungee";
 }
 
 @media only screen and (max-width: 768px) {
@@ -586,9 +576,12 @@ footer nav ul li a:hover {
     background: #fff;
   }
   #footer-contacto {
+    display: none;
+  }
+  #footer {
     background: #fff;
   }
-  .nav-footer {
+  .no-aparece {
     display: none;
   }
   .centrar {
@@ -598,34 +591,32 @@ footer nav ul li a:hover {
     bottom: 40px;
     right: 50px;
   }
-  .nav-mobile {
-    display: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1110px) {
+  #header-talles {
+    background-image: url(/img/footer-parallax-talles.png);
   }
-  .lista {
-    background: #000;
-    padding: 10px;
-    width: 100%;
-    height: 50px;
+  #header-galeria {
+    background-image: url(/img/footer-parallax-talles.png);
   }
-  .icon {
-    display: block;
+  #header-faq {
+    background-image: url(/img/footer-parallax-talles.png);
   }
-  .header nav {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background: #000;
+  #header-contacto {
+    background-image: url(/img/footer-parallax-talles.png);
   }
-  .cerrar {
-    position: absolute;
+  .galeria {
+    margin-right: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .nav-footer {
-    display: inherit;
+    margin-left: 40vh;
+    height: 20vh;
+    width: 50%;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
