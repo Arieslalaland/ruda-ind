@@ -12,6 +12,10 @@ a:hover {
   color: #000;
 }
 
+h1 {
+  font-family: "Bungee";
+}
+
 h2, h3 {
   font-family: "Bungee";
 }
