@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap,Bungee&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -622,5 +622,9 @@ a {
     width: 50%;
     text-align: center;
   }
+}
+
+@font-face {
+  font-display: swap;
 }
 /*# sourceMappingURL=estilos.css.map */
