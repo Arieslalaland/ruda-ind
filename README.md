@@ -1,2 +1,3 @@
 # RUDA Ind's Web
-<img src="https://rudashop.vercel.app/index.html" alt="web view">
+        visit my work here 👉🏾   https://rudashop.vercel.app/index.html
+<img src="https://rudashop.vercel.app/img/logo-ruda.png" alt="web view">
